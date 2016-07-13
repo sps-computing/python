@@ -1,0 +1,274 @@
+{
+	"$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+	"naptanId": "910GHYDNSRD",
+	"modes": ["national-rail", "bus"],
+	"icsCode": "1001143",
+	"smsCode": "47864",
+	"stopType": "NaptanRailStation",
+	"stationNaptan": "910GHYDNSRD",
+	"lines": [{
+		"$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+		"id": "200",
+		"name": "200",
+		"uri": "/Line/200",
+		"type": "Line"
+	}, {
+		"$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+		"id": "southern",
+		"name": "Southern",
+		"uri": "/Line/southern",
+		"type": "Line"
+	}, {
+		"$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+		"id": "thameslink",
+		"name": "Thameslink",
+		"uri": "/Line/thameslink",
+		"type": "Line"
+	}],
+	"lineGroup": [{
+		"$type": "Tfl.Api.Presentation.Entities.LineGroup, Tfl.Api.Presentation.Entities",
+		"naptanIdReference": "490001143A",
+		"stationAtcoCode": "490G01143B",
+		"lineIdentifier": ["200"]
+	}, {
+		"$type": "Tfl.Api.Presentation.Entities.LineGroup, Tfl.Api.Presentation.Entities",
+		"naptanIdReference": "490001143B",
+		"stationAtcoCode": "490G01143B",
+		"lineIdentifier": ["200"]
+	}, {
+		"$type": "Tfl.Api.Presentation.Entities.LineGroup, Tfl.Api.Presentation.Entities",
+		"stationAtcoCode": "910GHYDNSRD",
+		"lineIdentifier": ["southern", "thameslink"]
+	}],
+	"lineModeGroups": [{
+		"$type": "Tfl.Api.Presentation.Entities.LineModeGroup, Tfl.Api.Presentation.Entities",
+		"modeName": "bus",
+		"lineIdentifier": ["200"]
+	}, {
+		"$type": "Tfl.Api.Presentation.Entities.LineModeGroup, Tfl.Api.Presentation.Entities",
+		"modeName": "national-rail",
+		"lineIdentifier": ["southern", "thameslink"]
+	}],
+	"status": true,
+	"id": "910GHYDNSRD",
+	"commonName": "Haydons Road Rail Station",
+	"placeType": "StopPoint",
+	"additionalProperties": [{
+		"$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+		"category": "Geo",
+		"key": "Zone",
+		"sourceSystemKey": "SingleFareFinder",
+		"value": "3"
+	}],
+	"children": [{
+		"$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+		"naptanId": "4900HYDNSRD1",
+		"indicator": "Entrance 1",
+		"stopLetter": "1",
+		"modes": ["bus"],
+		"icsCode": "1001143",
+		"stopType": "NaptanRailEntrance",
+		"stationNaptan": "910GHYDNSRD",
+		"lines": [],
+		"lineGroup": [],
+		"lineModeGroups": [],
+		"status": true,
+		"id": "4900HYDNSRD1",
+		"commonName": "Haydons Road Station",
+		"placeType": "StopPoint",
+		"additionalProperties": [],
+		"children": [],
+		"lat": 51.42554,
+		"lon": -0.188823
+	}, {
+		"$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+		"naptanId": "490G01143B",
+		"modes": ["bus"],
+		"icsCode": "1001143",
+		"stopType": "NaptanOnstreetBusCoachStopCluster",
+		"stationNaptan": "490G01143B",
+		"lines": [{
+			"$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+			"id": "200",
+			"name": "200",
+			"uri": "/Line/200",
+			"type": "Line"
+		}],
+		"lineGroup": [{
+			"$type": "Tfl.Api.Presentation.Entities.LineGroup, Tfl.Api.Presentation.Entities",
+			"naptanIdReference": "490001143A",
+			"stationAtcoCode": "490G01143B",
+			"lineIdentifier": ["200"]
+		}, {
+			"$type": "Tfl.Api.Presentation.Entities.LineGroup, Tfl.Api.Presentation.Entities",
+			"naptanIdReference": "490001143B",
+			"stationAtcoCode": "490G01143B",
+			"lineIdentifier": ["200"]
+		}],
+		"lineModeGroups": [{
+			"$type": "Tfl.Api.Presentation.Entities.LineModeGroup, Tfl.Api.Presentation.Entities",
+			"modeName": "bus",
+			"lineIdentifier": ["200"]
+		}],
+		"status": true,
+		"id": "490G01143B",
+		"commonName": "Haydons Road Station",
+		"placeType": "StopPoint",
+		"additionalProperties": [],
+		"children": [{
+			"$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+			"naptanId": "490001143A",
+			"indicator": "Stop HC",
+			"stopLetter": "HC",
+			"modes": ["bus"],
+			"icsCode": "1001143",
+			"stopType": "NaptanPublicBusCoachTram",
+			"stationNaptan": "490G01143B",
+			"lines": [{
+				"$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+				"id": "200",
+				"name": "200",
+				"uri": "/Line/200",
+				"type": "Line"
+			}],
+			"lineGroup": [{
+				"$type": "Tfl.Api.Presentation.Entities.LineGroup, Tfl.Api.Presentation.Entities",
+				"naptanIdReference": "490001143A",
+				"stationAtcoCode": "490G01143B",
+				"lineIdentifier": ["200"]
+			}],
+			"lineModeGroups": [{
+				"$type": "Tfl.Api.Presentation.Entities.LineModeGroup, Tfl.Api.Presentation.Entities",
+				"modeName": "bus",
+				"lineIdentifier": ["200"]
+			}],
+			"status": true,
+			"id": "490001143A",
+			"commonName": "Haydons Road Station",
+			"placeType": "StopPoint",
+			"additionalProperties": [{
+				"$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+				"category": "Direction",
+				"key": "CompassPoint",
+				"sourceSystemKey": "Naptan490",
+				"value": "E"
+			}, {
+				"$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+				"category": "Direction",
+				"key": "Towards",
+				"sourceSystemKey": "CountDown",
+				"value": "Colliers Wood"
+			}],
+			"children": [],
+			"lat": 51.425004,
+			"lon": -0.189607
+		}, {
+			"$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+			"naptanId": "490001143B",
+			"indicator": "Stop HL",
+			"stopLetter": "HL",
+			"modes": ["bus"],
+			"icsCode": "1001143",
+			"stopType": "NaptanPublicBusCoachTram",
+			"stationNaptan": "490G01143B",
+			"lines": [{
+				"$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+				"id": "200",
+				"name": "200",
+				"uri": "/Line/200",
+				"type": "Line"
+			}],
+			"lineGroup": [{
+				"$type": "Tfl.Api.Presentation.Entities.LineGroup, Tfl.Api.Presentation.Entities",
+				"naptanIdReference": "490001143B",
+				"stationAtcoCode": "490G01143B",
+				"lineIdentifier": ["200"]
+			}],
+			"lineModeGroups": [{
+				"$type": "Tfl.Api.Presentation.Entities.LineModeGroup, Tfl.Api.Presentation.Entities",
+				"modeName": "bus",
+				"lineIdentifier": ["200"]
+			}],
+			"status": true,
+			"id": "490001143B",
+			"commonName": "Haydons Road Station",
+			"placeType": "StopPoint",
+			"additionalProperties": [{
+				"$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+				"category": "Direction",
+				"key": "CompassPoint",
+				"sourceSystemKey": "Naptan490",
+				"value": "W"
+			}, {
+				"$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+				"category": "Direction",
+				"key": "Towards",
+				"sourceSystemKey": "CountDown",
+				"value": "Wimbledon"
+			}],
+			"children": [],
+			"lat": 51.424869,
+			"lon": -0.190216
+		}],
+		"lat": 51.425004,
+		"lon": -0.189607
+	}, {
+		"$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+		"naptanId": "9100HYDNSRD",
+		"modes": ["national-rail"],
+		"icsCode": "1001143",
+		"stopType": "NaptanRailAccessArea",
+		"stationNaptan": "910GHYDNSRD",
+		"lines": [],
+		"lineGroup": [],
+		"lineModeGroups": [],
+		"status": true,
+		"id": "9100HYDNSRD",
+		"commonName": "Haydons Road Rail Station",
+		"placeType": "StopPoint",
+		"additionalProperties": [],
+		"children": [],
+		"lat": 51.42545,
+		"lon": -0.188813
+	}, {
+		"$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+		"naptanId": "9100HYDNSRD0",
+		"modes": ["national-rail"],
+		"icsCode": "1001143",
+		"stopType": "NaptanRailAccessArea",
+		"stationNaptan": "910GHYDNSRD",
+		"lines": [{
+			"$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+			"id": "southern",
+			"name": "Southern",
+			"uri": "/Line/southern",
+			"type": "Line"
+		}, {
+			"$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+			"id": "thameslink",
+			"name": "Thameslink",
+			"uri": "/Line/thameslink",
+			"type": "Line"
+		}],
+		"lineGroup": [{
+			"$type": "Tfl.Api.Presentation.Entities.LineGroup, Tfl.Api.Presentation.Entities",
+			"stationAtcoCode": "910GHYDNSRD",
+			"lineIdentifier": ["southern", "thameslink"]
+		}],
+		"lineModeGroups": [{
+			"$type": "Tfl.Api.Presentation.Entities.LineModeGroup, Tfl.Api.Presentation.Entities",
+			"modeName": "national-rail",
+			"lineIdentifier": ["southern", "thameslink"]
+		}],
+		"status": true,
+		"id": "9100HYDNSRD0",
+		"commonName": "Haydons Road Rail Station",
+		"placeType": "StopPoint",
+		"additionalProperties": [],
+		"children": [],
+		"lat": 51.425411,
+		"lon": -0.188802
+	}],
+	"lat": 51.42545,
+	"lon": -0.188813
+}

@@ -3,7 +3,7 @@
 import requests 
 import datetime 
 import config # storing the TfL API key in a file that won't be saved to GitHub 
-# some very useful stuff from https://dateutil.readthedocs.io/en/stable/index.html
+# some very useful stuff from https://dateutil.readthedocs.io/en/stable/index.html, via http://stackoverflow.com/a/4771733/2902 
 import dateutil.tz
 import dateutil.parser 
 from dateutil.relativedelta import relativedelta
@@ -13,9 +13,23 @@ from dateutil.relativedelta import relativedelta
 def route(x):
 	r = requests.get('https://api.tfl.gov.uk/line/{0}/stoppoints'.format(x))
 	json_result = r.json()
-	print(json_result)
+	keys = ["commonName", "stopLetter", "indicator", "stationNaptan", "naptanId"]
+	print(keys)
+	for stop in json_result:
+		output = "" 
+		for key in keys: 
+			value = stop.get(key, "<empty>")
+			output += value + ", "
+		print(output)
 
-#route(200)
+
+#	print(json_result)
+route(200)
+
+# https://api.tfl.gov.uk/line/200/route - returns route details 
+# https://api.tfl.gov.uk/line/24/route/sequence/outbound - returns route sequence (outbound and inbound is based on the route details)
+# https://api.tfl.gov.uk/StopPoint/490005183E - gives intersection information 
+
 
 # please note that these are app specific keys and should not be saved into Github! 
 def arrivals(naptan, app_id=None, app_key=None):
@@ -45,7 +59,7 @@ def arrivals(naptan, app_id=None, app_key=None):
 		timestamp = arrival['timestamp']
 	print("ts/now: {0}/{1}".format(timestamp, datetime.datetime.now().time()))
 
-arrivals('490001143B')
+#arrivals('490001143B')
 
 
 # OLD METHODS: 
